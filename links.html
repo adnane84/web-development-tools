@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page title -->
+  <title>Friends on the Journey of Web Development</title>
+  <meta name="title" content="Web Development links for courses and certificates.">
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/09f34e56b7.js" crossorigin="anonymous"></script>
+  <!-- custom css link-->
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/links.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/links-responsive.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./images/logo.svg" alt="Web Dev logo" width="64px" height="50px">
+      </a>
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./images/logo.svg" alt="Web Dev logo" width="64px" height="50px">
+          </a>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-label="true"></ion-icon>
+          </button>
+        </div>
+        <ul class="navbar-list">
+          <li>
+            <a href="./index.html" class="navbar-link">Home</a>
+          </li>
+          <li>
+            <a href="./index.html" class="navbar-link">About</a>
+          </li>
+          <li>
+            <a href="./links.html" class="navbar-link">Links</a>
+          </li>
+          <li>
+            <a href="#favoritesContainer" class="navbar-link" id="show-hide">Favorites</a>
+          </li>
+          <li>
+            <a href="./index.html" class="navbar-link">Contact</a>
+          </li>
+        </ul>
+        <div class="wrapper">
+          <a href="email@example.com" class="contact-link">info@email.com</a>
+          <a href="tel:001617437798" class="contact-link">00 (1617) 437 798</a>
+        </div>
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <section class="section hero" aria-label="home">
+    <div class="container card-container">
+      <div class="hero-content">
+        <h1 class="hero-title headline-1" data-reveal="top" data-reveal-delay="0.5s">
+          Web Dev Link Hub:
+        </h1>
+        <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
+          Your Gateway to Essential Web Development Resources.
+          This meticulously curated collection of web development links brings together an array of invaluable
+          resources to aid both aspiring and seasoned web developers on their journey.
+          Explore a diverse range of websites, tutorials, documentation, and community platforms
+          covering HTML, CSS, JavaScript, frameworks, design, and much more. Whether you seek
+          to expand your skillset, find inspiration, or troubleshoot challenges,
+          "Web Dev Link Hub" serves as your central portal to navigate the vast world of web
+          development knowledge and propel your projects to new heights. Delve into this rich
+          compilation and unlock the boundless potential of the web development universe.
+          Happy coding!
+        </p>
+        <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+          <a href="#" class="btn btn-primary">See Links</a>
+          <a href="#" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="random-website">
+        <!-- fetching some data from api to create a random card components -->
+      </div>
+    </div>
+  </section>
+
+<!-- Categories and Types -->
+<section class="tags" aria-labelledby="tag-label">
+  <div class="container">
+    <h2 class="" id="tag-label">
+      <span class="span">Categories and Types</span>
+    </h2>
+  </div>
+  <p id="no-results"></p>
+  <div class="categories-tags">
+    <h2>Filter by category</h2>
+    <div id="post-categories" class="filter-container"></div>
+    <h2>Filter by type</h2>
+    <div id="post-levels" class="filter-container"></div>
+  </div>
+  <div class="filter-buttons">
+    <div class="sort-title">
+      <h2>Sort by name</h2>
+    </div>
+<div class="sort-buttons">
+  <button class="tag-btn" id="sortButtonAtoZ">From A to Z</button>
+  <button class="tag-btn" id="sortButtonZtoA">From Z to A</button>
+</div>
+  </div>
+</section>
+
+<!-- Favorite Cards -->
+<section  class="favoritesContainer" id="favoritesContainer" data-animation="zoomInOut">
+<div class="favorite-page">
+  <div class="favorite-header">
+    <i class="fas fa-times" data-close></i>
+</div>
+  <div class="favorite-cards">
+  </div>
+</div>
+</section>
+
+  <!-- Cards -->
+  <section  class="cards">
+    <div class="card-container" id="cardContainer">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">
+        © 2023 Adnane. All rights reserved.
+      </p>
+      <ul class="social-list">
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-dribbble"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <button id="scrollToTopButton" class="scroll-to-top-button" aria-label="Scroll to Top">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </button>
+
+<!-- JavaScript scripts -->
+  <script src="./js/app.js"></script>
+  <script src="./js/scrolling.js"></script>
+  <!-- ion-icon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+
+
+
