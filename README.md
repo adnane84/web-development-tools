@@ -25,6 +25,7 @@ List the technologies, frameworks, libraries, and tools used in your project.
     MongoDB 
 
 
-<img width="1753" alt="Screenshot1" src="https://github.com/adnane84/web-development-tools/assets/92402125/5c3543cc-cf9a-448c-9510-437be5220502">
+
 <img width="1569" alt="Screenshot2" src="https://github.com/adnane84/web-development-tools/assets/92402125/bec6b201-baae-401d-8c6b-163e54430986">
 <img width="1569" alt="Screenshot3" src="https://github.com/adnane84/web-development-tools/assets/92402125/f347c9c3-3227-4c4e-9aaa-593512c48f98">
+<img width="1753" alt="Screenshot1" src="https://github.com/adnane84/web-development-tools/assets/92402125/5c3543cc-cf9a-448c-9510-437be5220502">
