@@ -26,8 +26,6 @@ List the technologies, frameworks, libraries, and tools used in your project.
 
 
 
-<img width="1569" alt="Screenshot2" src="https://github.com/adnane84/web-development-tools/assets/92402125/bec6b201-baae-401d-8c6b-163e54430986">
+![web-dev-tools1](https://github.com/adnane84/web-development-tools/assets/92402125/45459dee-ccf1-44d2-9792-675eff4b9f4a)
 
-<img width="1569" alt="Screenshot3" src="https://github.com/adnane84/web-development-tools/assets/92402125/f347c9c3-3227-4c4e-9aaa-593512c48f98">
-
-<img width="1753" alt="Screenshot1" src="https://github.com/adnane84/web-development-tools/assets/92402125/5c3543cc-cf9a-448c-9510-437be5220502">
+![webDevTools](https://github.com/adnane84/web-development-tools/assets/92402125/7a4543d0-8ac8-4df1-a661-d68ca64e126d)
