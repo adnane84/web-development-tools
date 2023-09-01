@@ -104,7 +104,7 @@ const fetchData = async () => {
 
 const randomCard = (data) => {
   const randomIndex = Math.floor(Math.random() * data.length);
-  randomElement = data[randomIndex];
+  const randomElement = data[randomIndex];
 
   const card = document.createElement("div");
   card.classList.add("card");
