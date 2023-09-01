@@ -1,3 +1,5 @@
+import data from './data.js';
+
 // Making a reusable function for the events
 const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
@@ -81,8 +83,7 @@ const API_URL = "https://node-api-v2-qteu.onrender.com/api/products";
 
 const fetchData = async () => {
   try {
-    const response = await fetch(API_URL);
-    const data = await response.json();
+  
     postsData = data;
 
     const categoriesData = [
@@ -146,9 +147,9 @@ function createCard(data) {
   <div class="random-content">
   <h3>${title}</h3>
     <div class="cards-info">
-    <span class="cards-category">${categories[0]}</span>
+    <span class="cards-category">${categories.shift()}</span>
       <span class="type-title">
-            ${type[0]}
+            ${type.shift()}
           </span>
       <p>${description}</p>
     </div>
@@ -264,14 +265,14 @@ const createFavoritePost = (postData) => {
     <img src="${image}" alt="card image" class="img-cover" height="480" width="327">
   </figure>
   <div class="favorite-content">
-    <span class="cards-category">${categories[0]}</span>
+    <span class="cards-category">${categories.shift()}</span>
     <div class="favorite-info">
       <h3>${title}</h3>
       <p>${description}</p>
     </div>
     <div class="random-category">
       <span class="type">
-        ${type[0]}
+        ${type.shift()}
       </span>
     </div>
   </div>
@@ -357,4 +358,4 @@ closeBtn.addEventListener("click", function () {
   favoritePage.classList.remove("show-fav");
 });
 
-fetchData();
+fetchData(data);
