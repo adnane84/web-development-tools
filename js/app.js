@@ -79,7 +79,6 @@ const cardContainer = document.getElementById("cardContainer");
 const favoritesContainer = document.querySelector(".favorite-cards");
 const sortButtonAtoZ = document.getElementById("sortButtonAtoZ");
 const sortButtonZtoA = document.getElementById("sortButtonZtoA");
-const API_URL = "https://node-api-v2-qteu.onrender.com/api/products";
 
 const fetchData = async () => {
   try {
